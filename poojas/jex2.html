@@ -1,0 +1,39 @@
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+		$( ".btn").click(function()//to use class use dot
+		{
+			//$("ul li").css("background" ,"gray");
+			//$("ul li").first().css("background" ,"gray");
+			//$("ul li").last().css("background" ,"gray");
+			//$("ul li").eq(3).css("background" ,"gray");
+			//$("ul li:first").css("background" ,"gray");
+			//$("ul li:last").css("background" ,"gray");
+			//$("ul li:eq(4)").css("background" ,"gray");
+			//$("ul li:odd").css("background" ,"gray");
+			//$("ul li:even").css("background" ,"gray");
+			$("ul li:gt(2)").css("background" ,"gray");
+		})
+		$("ul li").click(function(){
+			//$(this).css("background" ,"gray");
+			//$(this).next().css("background" ,"gray");
+			//$(this).prev().css("background" ,"gray");
+			//$(this).prevAll().css("background" ,"gray");
+		//	$(this).nextAll().css("background" ,"gray");
+		//$(this).siblings().css("background" ,"gray");
+		//$(this).parent().css("background" ,"gray");
+		$(this).parents().css("background" ,"gray");
+		});
+	})
+</script>
+<button class="btn">Enter</button>
+<ul>
+	<li>test1</li>
+		<li>test1</li>
+	<li>test1</li>
+	<li>test1</li>
+	<li>test1</li>
+	<li>test1</li>
+	<li>test1</li>
+</ul>
